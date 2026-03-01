@@ -70,9 +70,12 @@ body {
   height: 50px;
   width: auto;
 }
-.box-review h4,
+.box-review h2,
 .box-review p {
   color: #ffffff;
+}
+.box-review h2 {
+  font-size: 16px;
 }
 .box-review p {
   line-height: 1.5;
