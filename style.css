@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  /* 1. مسار الصورة */
+  background-image:
+    url("images/bg-pattern-top-desktop.svg"),
+    url("images/bg-pattern-bottom-desktop.svg");
+  /* 2. منع التكرار */
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    left top,
+    right bottom;
+  /* لون احتياطي لو الصورة أخدت وقت في التحميل */
+  background-color: #f7f2f7;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  width: 1100px;
+  height: 700px;
+  margin: 10px auto 0;
+}
+
+.top-section {
+  font-weight: 200;
+  display: grid;
+  grid-template-columns: 400px 2fr;
+  padding: 20px;
+  margin-bottom: 0px;
+  gap: 170px;
+  justify-content: space-between;
+  margin: 150px 0 100px;
+}
+
+.bottom-section {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: start;
+  height: 250px;
+  column-gap: 20px;
+}
+.box-review:nth-child(1) {
+  align-self: start;
+}
+
+.box-review:nth-child(2) {
+  align-self: center;
+}
+
+.box-review:nth-child(3) {
+  align-self: end;
+}
+.box-review {
+  background-color: #502050;
+  border-radius: 10px;
+  padding: 25px 25px;
+}
+.box-review img {
+  border-radius: 100%;
+  height: 50px;
+  width: auto;
+}
+.box-review h4,
+.box-review p {
+  color: #ffffff;
+}
+.box-review p {
+  line-height: 1.5;
+}
+.rated-review {
+  background-color: hsl(300, 14%, 85%);
+  display: flex;
+  padding: 15px 20px;
+  margin-top: 16px;
+  border-radius: 5px;
+  font-weight: 500;
+  flex-direction: row;
+  width: 387px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+h1 {
+  color: rgb(80, 32, 80);
+  font-size: xxx-large;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: hsl(333, 80%, 67%);
+  font-weight: normal;
+  margin: 5px 0;
+  display: block;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  align-items: end;
+  margin-bottom: 30px;
+}
+footer {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.rated-review:nth-child(1) {
+  justify-self: start;
+}
+
+.rated-review:nth-child(2) {
+  justify-self: center;
+}
+
+.rated-review:nth-child(3) {
+  justify-self: end;
+}
+
+.top-section-box1 p {
+  font-weight: 500;
+  line-height: 1.5;
+  color: #937b92;
+}
+.rated-review p {
+  color: rgb(80, 32, 80);
+  font-weight: 700;
+}
